@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tinder Friend Finder</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="container2">
+
+        <h2 id="survey-title">Test your tinder friend compatability!</h2>
+        <hr>
+        
+    
+        <h3><strong>Question 1</strong></h3>
+        <h4>You look for controlled environemnts over chaos.</h4>
+        <select class="chosen-select" id="q1">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+    
+        <h3><strong>Question 2</strong></h3>
+        <h4>You prefer your privacy rather than crowds</h4>
+        <select class="chosen-select" id="q2">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+    
+    
+        <h3><strong>Question 3</strong></h3>
+        <h4>You would rather be surrounded by humor rather than pessimism</h4>
+        <select class="chosen-select" id="q3">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+    
+    
+        <h3><strong>Question 4</strong></h3>
+        <h4>You prefer to seak out the unknown rather than beaten path</h4>
+        <select class="chosen-select" id="q4">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+    
+    
+        <h3><strong>Question 5</strong></h3>
+        <h4>Suffocating friends are to much to handle.</h4>
+        <select class="chosen-select" id="q5">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+    
+    
+        <h3><strong>Question 6</strong></h3>
+        <h4>You like people with complimentary viewpoints to debate with</h4>
+        <select class="chosen-select" id="q6">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+    
+    
+        <h3><strong>Question 7</strong></h3>
+        <h4>You believe in one way to compelte a task</h4>
+        <select class="chosen-select" id="q7">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+    
+        <h3><strong>Question 8</strong></h3>
+        <h4>When making a decision you tend to stick with your choice</h4>
+        <select class="chosen-select" id="q8">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+    
+        <h3><strong>Question 9</strong></h3>
+        <h4>Are better around individuals who have less ambition</h4>
+        <select class="chosen-select" id="q9">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+    
+        <h3><strong>Question 10</strong></h3>
+        <h4>You're hesitant and take long to decide on how to act</h4>
+        <select class="chosen-select" id="q10">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+    
+        <br>
+        <br>
+    
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submitBtn"><i class="fa fa-check" aria-hidden="true"></i>
+         View Your Top Results</button>
+    
+        <hr>
+        <footer class="footer">
+            <div class="container">
+              <p><a href="/api/starting"><strong>TINDER FRIEND FINDER &copy;</strong></a>
+            </div>
+          </footer>
+    
+      </div>
+    
+      <!-- Modal after survey completion -->
+		<div id="starterModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3 class="modal-title text-center">Your starter is...</h3>
+						<button type="button" class="close" data-dismiss="modal">
+						</button>						
+					</div>
+					<div class="modal-body text-center">
+						<h2 id="starter"></h2>
+						<img id="starterPhoto" src="#" class="img-fluid border border-secondary modal-img">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<!-- Modal if survey incomplete -->
+		<div  id="surveyIncompleteModal" class="modal fade" tabindex="-1" role="dialog">
+			<div class="modal-dialog"\>
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <h3 class="modal-title text-center">Please Complete the Survey!</h3>
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  </button>
+				</div>
+				<div class="modal-body text-center">
+					<img src="https://static.businessinsider.com/image/5790a890dd0895741b8b463d/image.jpg" alt="Angry Pokemon" title="Angry Pokemon" class="img-fluid border border-secondary modal-img">
+				</div>
+				<div class="modal-footer text-right">
+				  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+          <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>      
+  <script type="text/javascript">
+	$("#submitBtn").on("click", function(event) {
+		event.preventDefault();
+		// Form validation
+		let valid = true;
+		if($("#name").val() === "" || $("#photo").val() === "") {
+			valid = false;
+		} else if($("#q1").val() === "empty" || $("#q2").val() === "empty" || $("#q3").val() === "empty" || $("#q4").val() === "empty" || $("#q5").val() === "empty" || $("#q6").val() === "empty" || $("#q7").val() === "empty" || $("#q8").val() === "empty" || $("#q9").val() === "empty" || $("#q10").val() === "empty") {
+			valid = false;
+		}
+		if(valid) {
+			let userData = {
+				name: $("#name").val().trim(),
+				photo: $("#photo").val().trim(),
+				scores: [
+					$("#q1").val(),
+					$("#q2").val(),
+					$("#q3").val(),
+					$("#q4").val(),
+					$("#q5").val(),
+					$("#q6").val(),
+					$("#q7").val(),
+					$("#q8").val(),
+					$("#q9").val(),
+					$("#q10").val()
+				]
+			};
+			let currentURL = window.location.origin;
+			// Ajax call for receiving response after POST req
+			$.post(currentURL + "/api/starters", userData, function(data) {
+				$("#starter").text(data.name);
+				$("#starterPhoto").attr("src", data.photo);
+				$("#starterModal").modal("toggle");
+			});
+		} else {
+			// If a required field is missing, show alert
+			$("#surveyIncompleteModal").modal("toggle");
+		}
+	});
+</script>
+
+</body>
+
+</html>
