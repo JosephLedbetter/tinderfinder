@@ -1,9 +1,8 @@
 body {
-    background:url(../image/bff.jpg)
-};
+    background:url(../image/bff.jpg);
     background-attachment: fixed;
     background-repeat: repeat;
-}
+};
 
 .jumbotron, .container {
     background-color: #ff3333;
@@ -17,6 +16,8 @@ input, select, option {
 
 .container{
     background:red;
+    text-shadow: 2px 2px maroon;
     color: white;
 }
+
 

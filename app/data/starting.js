@@ -1,7 +1,7 @@
 let profiles = [
     {
-      name: "Mihcelle Obama",
-      photo: ,
+      name: "Michelle Obama",
+      photo: href="../image/michelle.jpg",
       scores: [
         "5",
         "1",
@@ -17,7 +17,7 @@ let profiles = [
     },
     {
       name: "Jake Paul",
-      photo: ,
+      photo: href="../image/jake.jpg",
       scores: [
         "5",
         "3",
@@ -33,7 +33,7 @@ let profiles = [
     },
     {
       name: "George Clooney",
-      photo: ,
+      photo: href="../image/george.jpg",
       scores: [
         "4",
         "3",
@@ -49,7 +49,7 @@ let profiles = [
     },
     {
       name: "Emma Watson",
-      photo: ,
+      photo: href="../image/emma.jpg",
       scores: [
         "4",
         "5",
@@ -65,7 +65,7 @@ let profiles = [
     },
     {
       name: "Matt Damon",
-      photo: ,
+      photo: href="../image/matt.jpg",
       scores: [
         "3",
         "4",
@@ -81,7 +81,7 @@ let profiles = [
     },
     {
       name: "Brittney Spears",
-      photo: ,
+      photo: href="../image/brittney.jpg",
       scores: [
         "3",
         "2",

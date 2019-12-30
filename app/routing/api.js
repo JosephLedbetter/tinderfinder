@@ -8,7 +8,7 @@ module.exports = function(app) {
   });
 
   // Action when use submits survey
-  app.post("/api/starters", function(req, res) {
+  app.post("/api/profiles", function(req, res) {
     let profileMatch = {
       name: "",
       photo: "",

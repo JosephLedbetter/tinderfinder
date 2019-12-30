@@ -22,7 +22,6 @@
         <hr>
         
     
-        <h3><strong>Question 1</strong></h3>
         <h4>You look for controlled environemnts over chaos.</h4>
         <select class="chosen-select" id="q1">
           <option value=""></option>
@@ -33,7 +32,6 @@
           <option value="5">5 (Strongly Agree)</option>
         </select>
     
-        <h3><strong>Question 2</strong></h3>
         <h4>You prefer your privacy rather than crowds</h4>
         <select class="chosen-select" id="q2">
           <option value=""></option>
@@ -45,7 +43,6 @@
         </select>
     
     
-        <h3><strong>Question 3</strong></h3>
         <h4>You would rather be surrounded by humor rather than pessimism</h4>
         <select class="chosen-select" id="q3">
           <option value=""></option>
@@ -57,7 +54,6 @@
         </select>
     
     
-        <h3><strong>Question 4</strong></h3>
         <h4>You prefer to seak out the unknown rather than beaten path</h4>
         <select class="chosen-select" id="q4">
           <option value=""></option>
@@ -69,7 +65,6 @@
         </select>
     
     
-        <h3><strong>Question 5</strong></h3>
         <h4>Suffocating friends are to much to handle.</h4>
         <select class="chosen-select" id="q5">
           <option value=""></option>
@@ -81,7 +76,6 @@
         </select>
     
     
-        <h3><strong>Question 6</strong></h3>
         <h4>You like people with complimentary viewpoints to debate with</h4>
         <select class="chosen-select" id="q6">
           <option value=""></option>
@@ -93,7 +87,6 @@
         </select>
     
     
-        <h3><strong>Question 7</strong></h3>
         <h4>You believe in one way to compelte a task</h4>
         <select class="chosen-select" id="q7">
           <option value=""></option>
@@ -104,7 +97,6 @@
           <option value="5">5 (Strongly Agree)</option>
         </select>
     
-        <h3><strong>Question 8</strong></h3>
         <h4>When making a decision you tend to stick with your choice</h4>
         <select class="chosen-select" id="q8">
           <option value=""></option>
@@ -115,7 +107,6 @@
           <option value="5">5 (Strongly Agree)</option>
         </select>
     
-        <h3><strong>Question 9</strong></h3>
         <h4>Are better around individuals who have less ambition</h4>
         <select class="chosen-select" id="q9">
           <option value=""></option>
@@ -126,7 +117,6 @@
           <option value="5">5 (Strongly Agree)</option>
         </select>
     
-        <h3><strong>Question 10</strong></h3>
         <h4>You're hesitant and take long to decide on how to act</h4>
         <select class="chosen-select" id="q10">
           <option value=""></option>
@@ -147,14 +137,14 @@
         <hr>
         <footer class="footer">
             <div class="container">
-              <p><a href="/api/starting"><strong>TINDER FRIEND FINDER &copy;</strong></a>
+              <p><a href="https://github.com/JosephLedbetter/tinderfinder"><strong>TINDER FRIEND FINDER &copy;</strong></a>
             </div>
           </footer>
     
       </div>
     
       <!-- Modal after survey completion -->
-		<div id="starterModal" class="modal fade" role="dialog">
+		<div id="startingModal" class="modal fade" role="dialog">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
@@ -164,7 +154,7 @@
 					</div>
 					<div class="modal-body text-center">
 						<h2 id="starter"></h2>
-						<img id="starterPhoto" src="#" class="img-fluid border border-secondary modal-img">
+						<img id="startingPhoto" src="#" class="img-fluid border border-secondary modal-img">
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -182,9 +172,6 @@
 				  <h3 class="modal-title text-center">Please Complete the Survey!</h3>
 				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 				  </button>
-				</div>
-				<div class="modal-body text-center">
-					<img src="https://static.businessinsider.com/image/5790a890dd0895741b8b463d/image.jpg" alt="Angry Pokemon" title="Angry Pokemon" class="img-fluid border border-secondary modal-img">
 				</div>
 				<div class="modal-footer text-right">
 				  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -225,10 +212,10 @@
 			};
 			let currentURL = window.location.origin;
 			// Ajax call for receiving response after POST req
-			$.post(currentURL + "/api/starters", userData, function(data) {
-				$("#starter").text(data.name);
-				$("#starterPhoto").attr("src", data.photo);
-				$("#starterModal").modal("toggle");
+			$.post(currentURL + "/api/profiles", userData, function(data) {
+				$("#starting").text(data.name);
+				$("#startingPhoto").attr("src", data.photo);
+				$("#startingModal").modal("toggle");
 			});
 		} else {
 			// If a required field is missing, show alert
