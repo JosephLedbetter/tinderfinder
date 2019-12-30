@@ -16,7 +16,7 @@ input, select, option {
 
 .container{
     background:red;
-    text-shadow: 2px 2px maroon;
+    text-shadow: 2px 2px 5px maroon;
     color: white;
 }
 
