@@ -1,0 +1,25 @@
+{
+  "name": "tinderfinder",
+  "version": "1.0.0",
+  "description": "**This is your Tinder Friend Finder test!**",
+  "main": "server.js",
+  "dependencies": {
+    "heroku-cli": "^7.0.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosephLedbetter/tinderfinder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JosephLedbetter/tinderfinder/issues"
+  },
+  "homepage": "https://github.com/JosephLedbetter/tinderfinder#readme"
+}
