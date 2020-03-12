@@ -10,3 +10,6 @@ Have fun, and select the best possible description of your personality on each q
 possible match.
 
 Enjoy!
+
+# Psuedo coding left:
+Unable to deploy to heroku successfully. Continously received the error "-a, --app APP  app to run command against"
