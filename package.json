@@ -4,6 +4,7 @@
   "description": "**This is your Tinder Friend Finder test!**",
   "main": "server.js",
   "dependencies": {
+    "heroku": "^7.39.0",
     "heroku-cli": "^7.0.9"
   },
   "devDependencies": {},
